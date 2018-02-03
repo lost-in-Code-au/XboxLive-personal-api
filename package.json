@@ -2,6 +2,7 @@
   "name": "xboxlive",
   "version": "0.1.0",
   "private": true,
+  "author": "Reece C Jones",
   "dependencies": {
     "dotenv": "^5.0.0",
     "flow": "^0.2.3",
