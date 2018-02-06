@@ -67,13 +67,7 @@ class App extends Component {
 	_renderThisPage = () => {
 
 		const text = this.state.loading ? 'Loading...' : 'Loaded'
-		if(this.state.gamerCard !== null &
-			this.state.games !== null &
-			this.state.user !== null
-		){
-				console.log('All done!')
-				this.setState({...this.state, loading: !this.state.loading})
-		}
+
 		if(this.state.loading) {
 			return(
 				<div className="App">
@@ -124,6 +118,13 @@ class App extends Component {
 	}
 
 	render() {
+		if(this.state.gamerCard !== null &
+			this.state.games !== null &
+			this.state.user !== null
+		){
+				console.log('All done!')
+				this.setState({...this.state, loading: !this.state.loading})
+		}
 		return (
 			<div>
 				{this._renderThisPage()}
